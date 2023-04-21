@@ -17,14 +17,20 @@ if (num1>num2)
 {
     if (num1>num3)
     {
-        Console.WriteLine("Первое число - наибольшее");
+        Console.WriteLine("Наибольшее - ");
+        Console.WriteLine(num1);
     }
-}
-if (num2>num3)
-{
-    Console.WriteLine("Второе число - наибольшее");
 }
 else
 {
-    Console.WriteLine("Третье число - наибольшее");
+    if (num2>num3)
+{
+    Console.WriteLine("Наибольшее - ");
+    Console.WriteLine(num2);
+}
+else
+{
+    Console.WriteLine("Наибольшее - ");
+    Console.WriteLine(num3);
+}
 }
