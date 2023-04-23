@@ -13,24 +13,10 @@ Console.WriteLine("Введите второе число: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число: ");
 int num3 = Convert.ToInt32(Console.ReadLine());
-if (num1>num2)
-{
-    if (num1>num3)
-    {
-        Console.WriteLine("Наибольшее - ");
-        Console.WriteLine(num1);
-    }
-}
-else
-{
-    if (num2>num3)
-{
+int max = num1;
+if (num2 > max) max = num2;
+if (num3 > max) max = num3;
+
     Console.WriteLine("Наибольшее - ");
-    Console.WriteLine(num2);
-}
-else
-{
-    Console.WriteLine("Наибольшее - ");
-    Console.WriteLine(num3);
-}
-}
+    Console.WriteLine(max);
+
