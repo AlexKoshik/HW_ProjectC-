@@ -4,3 +4,9 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
+
+Console.WriteLine("Введите трехзначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int result = num % 100;
+int result1 = result / 10;
+Console.WriteLine(result / 10);
