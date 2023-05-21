@@ -15,9 +15,12 @@ int ExpNum()
 {
     int result=a;
     int count = 1;
-    for (int i = a; count <= b; count++)
+    for (int i = a; count < b; count++)
     {   
-        result = result * result;
+       
+            result = result * i;
+        
+        
     }
     return result;
 }
