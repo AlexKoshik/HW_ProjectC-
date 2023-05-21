@@ -13,14 +13,11 @@ int b = Convert.ToInt32(Console.ReadLine());
 int num = ExpNum();
 int ExpNum()
 {
-    int result=a;
+    int result = a;
     int count = 1;
     for (int i = a; count < b; count++)
-    {   
-       
-            result = result * i;
-        
-        
+    {
+        result = result * i;
     }
     return result;
 }
