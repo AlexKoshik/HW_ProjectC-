@@ -9,4 +9,38 @@
 
 // 8 7,8 -7,1 9
 
+int InputNumber()
+{
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+void CraeteArray(double[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            arr[i, j] = new Random().Next(-10, 10);
+        }
+    }
+}
 
+void PrintArray(double[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write($"{arr[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+}
+
+Console.Write("Введите m: ");
+int row = InputNumber();
+Console.Write("Введите n: ");
+int colums = InputNumber();
+double[,] array = new double[row, colums];
+CraeteArray(array);
+PrintArray(array);
